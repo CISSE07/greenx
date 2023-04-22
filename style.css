@@ -42,8 +42,19 @@ nav a {
     color: #000000;
 }
 
+nav a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #214822;
+    transition: all .2s ease-in-out;
+}
 nav a:hover {
-    color: #ffff;
+    color: #214822;
+}
+nav a:hover::after{
+    width: 100%;
 }
 
 /* section intro_box */
@@ -65,6 +76,7 @@ figcaption {
 
 h1{
     font-size: 50px;
+    padding-bottom: 15px;
 }
 
 h2 {
@@ -150,6 +162,26 @@ table tr:nth-child(odd) {
 tr:hover{
     background-color: #81b38a91;
     cursor: pointer;
+}
+
+
+/* footer */
+footer{
+    background-color: #81B38A;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+}
+footer li{
+    list-style-type: none;
+    margin-right: 30px;
+}
+footer p{
+    padding-bottom: 15px;
 }
 
 
