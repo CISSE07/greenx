@@ -33,9 +33,21 @@ header li{
 
 section{
     padding: 20px 10px 10px 10px;
-
 }
-
+#logo{
+    display: flex;
+    align-items: center;
+}
+#headText{
+    margin-left: -20px;
+}
+#headText h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    background: linear-gradient(90deg, rgba(255,98,0,1) 21%, rgba(246,12,0,1) 39%, rgba(0,224,255,1) 39%, rgba(0,224,255,1) 57%, rgba(30,238,68,1) 67%, rgba(30,238,68,1) 75%, rgba(0,0,0,1) 75%);    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
 /* styliser la barre de navigation  */
 nav a {
     text-decoration: none;
